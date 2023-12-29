@@ -2,6 +2,12 @@ module.exports = (io) => {
   io.on('connection', (socket) => {
     console.log('New WebSocket connection');
 
+    // Require the note handler module
+    const noteHandler = require('./noteHandler');
+
+    // Logic for note-related functionalities
+    noteHandler(io, socket);
+
     // Logic for when a client connects
     socket.on('join', ({ username, room }, callback) => {
       const { error, user } = addUser({ id: socket.id, username, room });
