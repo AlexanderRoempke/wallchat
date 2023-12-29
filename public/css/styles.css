@@ -1,0 +1,24 @@
+/* Custom CSS Styles */
+#notes-container {
+  height: 400px;
+  overflow-y: scroll;
+  background-color: #f8f9fa; /* A light grey background */
+  min-height: 200px; /* Give it a minimum height so it's visible even when empty */
+}
+
+.note-entry {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.notes-title {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#notes-placeholder {
+  text-align: center;
+  margin-top: calc(50% - 0.5rem); /* Center the placeholder text vertically */
+}

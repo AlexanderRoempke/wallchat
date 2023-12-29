@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="text-center mb-4">Test App</h1>
+    <div class="row">
+      <div class="col-12 col-md-6 mb-3">
+        <!-- Form for note submission -->
+        <form id="note-form">
+          <div class="mb-3">
+            <textarea class="form-control" id="note-input" placeholder="Write your note here..." maxlength="2048" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Post Note</button>
+        </form>
+      </div>
+      <div class="col-12 col-md-6">
+        <!-- Area to display posted notes -->
+        <div id="notes-container" class="border p-3">
+          <h2 class="notes-title">Posted Notes</h2>
+          <p id="notes-placeholder" class="text-muted">No notes yet. Your posted notes will appear here.</p>
+          <!-- Posted notes will appear here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Socket.io -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Custom scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
