@@ -43,10 +43,6 @@ The current project includes the following files and directories:
 4. Start the server with `npm start`.
 5. Open a web browser and visit `http://localhost:3000` to view the app.
 
-## Collaboration
-
-Contributions are welcome! Please feel free to submit pull requests or open issues on the project's repository.
-
 ## License
 
 Released under the MIT License. See the accompanying LICENSE.md file for more details.
